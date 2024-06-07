@@ -15,7 +15,7 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ weather }:any) => {
   if (!weather || !weather.weather || weather.weather.length === 0) return null;
 
   const { temp, weather: weatherDetails } = weather;
-  const { description, icon } = weatherDetails[0];
+
 
   return (
     <View style={styles.container}>
