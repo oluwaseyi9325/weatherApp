@@ -31,7 +31,7 @@ const App: React.FC = () => {
     } catch (err) {
       console.log(err, "an error");
       setLoading(false);
-      setError('Could not fetch weather data. Please try again.');
+      setError('Could not fetch weather data. Please try again!');
     }
   };
 

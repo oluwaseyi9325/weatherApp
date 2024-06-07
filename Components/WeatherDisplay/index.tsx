@@ -13,10 +13,7 @@ interface WeatherDisplayProps {
 
 const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ weather }:any) => {
   if (!weather || !weather.weather || weather.weather.length === 0) return null;
-
   const { temp, weather: weatherDetails } = weather;
-
-
   return (
     <View style={styles.container}>
       <Text style={styles.temp}>{Math.round(weather?.main?.temp)}°C</Text>
